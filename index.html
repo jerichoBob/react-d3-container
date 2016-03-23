@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React+D3</title>
+    <link rel="shortcut icon" href="/react.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: "Open Sans";
+            background-color: #3e3e3e;
+            color: #f0f8ff;
+        }
+
+        path.line {
+            fill: none;
+            stroke: #4546b4;
+            stroke-width: 3px;
+        }
+        path.area {
+            /*fill: URL(#area-gradient);*/
+            stroke: none;
+        }
+        .axis path {
+            fill: none;
+            stroke: #454545;
+            stroke-opacity: 1.0;
+            shape-rendering: crispEdges;
+            stroke-width: 1;
+        }
+        .axis text {
+            font-size: 12px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 100;
+            color: #17ff64;
+        }
+        .grid .tick {
+            stroke: #454545;
+            stroke-opacity: 1.0;
+            shape-rendering: crispEdges;
+            stroke-width: 1;
+        }
+        .grid path {
+            stroke: #454545;
+            stroke-opacity: 1.0;
+            shape-rendering: crispEdges;
+            stroke-width: 1;
+        }
+
+        .d3chart {
+            color: #d3d3d3;
+            /*fill: rgba(255, 255, 255, 1.0);*/
+            border: 1px solid;
+            border-radius: 10px;
+            box-shadow: 5px 5px rgba(102, 102, 102, 0.21);
+        }
+        /* the backing rectangle */
+        .chartPanel {
+            color: #d3d3d3;
+            fill: url('#area-gradient2');
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        .datapoint {
+            stroke: #ff0218;
+            stroke-width: 1;
+            stroke-opacity: 1.0;
+            fill: green;
+            fill-opacity: .2;
+            shape-rendering: crispEdges;
+        }
+    </style>
+</head>
+<body>
+    <div id="reactNode"><%- reactOutput %></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/**
+ * some style love for my charts (d3 and others)
+ * @author bobse
+ */
+
+.d3chart {
+  stroke-width: 0;
+
+}
+.panel-body {
+  /*overflow: auto;*/
+}
+
+body {
+  font-size: 12px;
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+path.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+path.area {
+  fill: url(#area-gradient);
+  stroke: none;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke-width: 1px;
+  stroke: grey;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-family: "Open Sans";
+  stroke: black;
+  font-style: normal;
+  fill: #332acd
+}
+.grid,
+.grid .tick {
+  stroke: #c3c3c3;
+  stroke-opacity: 1.0;
+  shape-rendering: crispEdges;
+  stroke-width: 1;
+
+}
+.grid path {
+  stroke-width: 0;
+}
